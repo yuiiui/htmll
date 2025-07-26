@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 100px;
+  /* 用較普遍的色碼替代 lch() */
+  background-color: hsl(240, 20%, 95%);
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+    background-color: hsl(270, 30%, 98%);
+  margin-bottom: 0;  /* 清除下方空白 */
+  padding-bottom: 0;
+
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 這裡拆開巢狀，純 CSS 寫法 */
+.container div {
+  display: flex;
+  margin-top: 0; /* 確保不往下推 */
+}
+
+
+.r {
+  position: relative;
+}
+
+
+/* .r 裡的每個 div 邊框、寬度 */
+.r div {
+  border: 1px solid hsl(0, 10%, 90%);
+  padding: 10px;
+  width: 100px;
+}
+
+
+/* 四個 box 都給 flex:1 */
+.box-1,
+.box-2,
+.box-3,
+.box-4 {
+  flex: 1;
+}
+
+
+/* 輸入框組合 */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+
+input[type="text"] {
+  padding-right: 200px; /* 如果右側沒放東西，可減少此值 */
+  width: 70%;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+
+button {
+  display: flex;
+  padding: 10px 15px;
+  background-color:  #b3cfe7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+
+button:hover {
+  background-color:  #C2C5FE;
+}
+
+
+/* 結果顯示區 */
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e6e9ef;
+  border-radius: 5px;
+  border: 1px solid #898c8f;
+  display: none;
+}
+
+
+/* 疾病方塊 */
+.disease-box {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 16px;
+  background-color: #BADEFC;
+  color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+
+.disease-box:hover {
+  background-color: #7a94cc; /* 比原本更明顯的 hover 效果 */
+}
+/* 版權說明等小字區 */
+.disclaimer-box {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #555;
+}
