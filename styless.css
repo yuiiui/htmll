@@ -1,0 +1,53 @@
+.container div {
+    display: flex;
+    flex-direction: column;
+
+  margin-top: 0;  /* ✅ 確保白色大框不要往下推 */
+}
+  
+
+.r div {
+    border: 1px solid hsl(0, 10%, 90%);
+    padding: 10px;
+    width: 100px;
+  }
+  
+
+/* folder2/tab.css */
+
+/* tab bar 外框 */
+.tab-bar {
+  display: flex;
+  margin-bottom: 0;
+  background-color: hsl(270, 30%, 98%);
+}
+
+/* tab 項目 */
+.tab {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 3px solid lightgray;
+  cursor: pointer;
+  user-select: none; /* 避免點擊時選取文字 */
+}
+
+/* 被選中的 tab */
+.tab.active {
+  border-bottom: 3px solid #8d93d8;
+  font-weight: bold;
+  color: #1f2131;
+}
+/* 預設所有步驟區塊都不顯示 */
+.step-content {
+  display: none;
+}
+
+#step-4 {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+
