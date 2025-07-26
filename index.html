@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>我的 GitHub Pages</title>
-  </head>
-  <body>
-    <h1>Hello GitHub Pages!</h1>
-    <p>yuii</p>
-  </body>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>疾症對照站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>症狀查詢</h1>
+  <div class="step-bar">
+    <div class="tab-bar">
+      <div class="tab active" id="tab-1" onclick="goToStep(1)">症狀查詢</div>
+      <div class="tab" id="tab-2" onclick="goToStep(2)">詳細查詢</div>
+      <div class="tab" id="tab-3" onclick="goToStep(3)">資訊</div>
+      <div class="tab">治療</div>
+      <link rel="stylesheet" href="styless.css" />
+    </div>
+  </div>
+
+
+  <div class="container">
+    <!-- 第一步：輸入症狀 -->
+    <div id="step-1" class="step-content">
+      <label for="symptom">請輸入症狀：</label>
+      <input type="text" id="symptom" placeholder="例如：頭痛、腹痛、腹瀉">
+      <button id="searchBtn">查詢</button>
+    </div>
+
+
+    <!-- 第二步：疾病清單 -->
+    <div id="step-2" class="step-content" style="display: none;">
+      <div id="result" class="result">
+        <p id="result-text"></p>
+      </div>
+    </div>
+
+
+    <!-- 第三步：詳細資訊 -->
+    <div id="step-3" class="step-content" style="display: none;">
+      <div id="disease-info">
+        <h2 id="disease-name"></h2>
+
+
+
+
+        <p><strong>科別：</strong> <span id="disease-department"></span><br></p>
+        <p><strong>起因：</strong> <span id="disease-cause"></span></p>
+        <p><strong>症狀：</strong> <span id="disease-symptoms"></span></p>
+        <p><strong>治療：</strong> <span id="disease-treatment"></span></p>
+        <p><strong>日常管理：</strong> <span id="disease-management"></span></p>
+        <p><strong>備註：</strong> <span id="disease-note"></span></p>
+      </div>
+    </div>
+    <button id="to-treatment-btn">查看治療建議</button>
+
+
+  </div>
+  <div id="step-4" class="step-content">
+  <h2>治療建議</h2>
+  <p>這裡會顯示治療建議內容（可以根據疾病顯示對應內容）</p>
+</div>
+
+
+
+
+  <script src="java.js"></script>
+</body>
 </html>
