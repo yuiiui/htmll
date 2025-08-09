@@ -7,7 +7,8 @@ const symptoms = {
     "鼻竇性頭痛（Sinus headaches）",
     "慢性日常性頭痛（Chronic daily headaches）",
     "咳嗽性頭痛（Cough Headaches）",
-    "雷鳴性頭痛（Thunderclap headaches）"
+    "雷鳴性頭痛（Thunderclap headaches）",
+    "AAAAAAAAAAAA"
   ],
   "發燒": [
     "登革熱（Dengue Fever）",
