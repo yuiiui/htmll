@@ -392,7 +392,7 @@ const allDiseases = {
     "department": "神經內科",
     "cause": "腦部結構異常、遺傳、頭部外傷、腦中風、感染等。",
     "symptoms": "發作時可能出現意識喪失、抽搐、感覺異常、行為改變。",
-    "medicine": "抗癲癇藥物",
+    "medicine": "抗癲癇藥物如帝拔癲、優閒（Levetiracetam）",
     "treatment": "服用抗癲癇藥物控制發作。若藥物無效，可考慮手術、生酮飲食、迷走神經刺激術。"
   },
   "格林─巴利症候群 (Guillain-Barre Syndrome)": {
